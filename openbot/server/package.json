@@ -5,10 +5,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc --noEmit",
+    "build": "node init && tsc --noEmit",
     "db:generate": "bun --env-file=../.env drizzle-kit generate --config=drizzle.config.ts",
     "db:migrate": "bun --env-file=../.env scripts/migrate.ts",
-    "dev": "bun --env-file=../.env --watch src/index.ts",
+    "dev": "node init && bun --env-file=../.env --watch src/index.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

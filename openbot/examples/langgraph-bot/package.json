@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --env-file=../../.env --watch src/index.ts",
-    "start": "bun --env-file=../../.env src/index.ts"
+    "dev": "node init && bun --env-file=../../.env --watch src/index.ts",
+    "start": "node init && bun --env-file=../../.env src/index.ts"
   },
   "dependencies": {
     "@ag-ui/core": "0.0.57",

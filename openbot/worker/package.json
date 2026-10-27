@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc --noEmit",
-    "dev": "bun --watch src/index.ts",
+    "build": "node init && tsc --noEmit",
+    "dev": "node init && bun --watch src/index.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
